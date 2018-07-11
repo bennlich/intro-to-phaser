@@ -24,6 +24,9 @@ function create() {
     //  Double the size of the platform (vertically by 2 and horizontally by 2)
     ground.scale.setTo(2, 2);
     
+    // The player and its settings
+    var player = game.add.sprite(32, game.world.height - 150, 'dude');
+    
 }
 
 function update() {
