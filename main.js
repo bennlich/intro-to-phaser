@@ -52,6 +52,9 @@ function create() {
     player.animations.add('left', [0, 1, 2, 3], 10, true);
     player.animations.add('right', [5, 6, 7, 8], 10, true);
     
+    //  Now let's create two ledges
+    var ledge1 = platforms.create(400, 400, 'ground');
+    var ledge2 = platforms.create(-150, 250, 'ground');
 }
 
 function update() {
