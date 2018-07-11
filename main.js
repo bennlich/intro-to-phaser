@@ -48,6 +48,8 @@ function create() {
     //  Our controls.
     keys = game.input.keyboard.createCursorKeys();
     
+    // Add animations to the player
+    player.animations.add('left', [0, 1, 2, 3], 10, true);
 }
 
 function update() {
