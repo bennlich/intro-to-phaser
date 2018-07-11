@@ -13,6 +13,7 @@ function preload() {
 // have to be declared outside of both functions.
 var keys;
 var player;
+var ground;
 
 function create() {
 
@@ -24,7 +25,7 @@ function create() {
     var platforms = game.add.group();
     
     // Here we create the ground.
-    var ground = platforms.create(0, game.world.height - 64, 'ground');
+    ground = platforms.create(0, game.world.height - 64, 'ground');
     
     //  Double the size of the platform (vertically by 2 and horizontally by 2)
     ground.scale.setTo(2, 2);
