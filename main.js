@@ -73,5 +73,8 @@ function update() {
         
         //  Stand still
         player.animations.stop();
+        
+        // Reset animation frame
+        player.frame = 4;
     }
 }
