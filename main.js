@@ -59,6 +59,7 @@ function update() {
     if (keys.left.isDown) {
         //  Move to the left
         player.body.velocity.x = -150;
+        player.animations.play('left');
     }
     else if (keys.right.isDown) {
         //  Move to the right
