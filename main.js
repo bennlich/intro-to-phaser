@@ -59,6 +59,10 @@ function create() {
     
     // Enable physics on the platforms so you can collide with them
     game.physics.arcade.enable(platforms);
+    
+    // Prevent the ledges from moving
+    ledge1.body.immovable = true;
+    ledge2.body.immovable = true;
 }
 
 function update() {
