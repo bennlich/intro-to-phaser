@@ -27,7 +27,18 @@ function create() {
     // The player and its settings
     var player = game.add.sprite(32, game.world.height - 150, 'dude');
     
+    //  We need to enable physics on the player so that it can move and collide
+    //  with stuff
+    game.physics.arcade.enable(player);
+    
+    //  Our controls.
+    var keys = game.input.keyboard.createCursorKeys();
+    
 }
 
 function update() {
+    if (keys.right.isDown) {
+        //  Move to the left
+        player.body.velocity.x = 150;
+    }
 }
