@@ -11,8 +11,11 @@ function preload() {
 
 function create() {
 
-	game.add.sprite(0, 0, 'star');
+    game.add.sprite(20, 20, 'star');
 
+    //  A simple background for our game
+    game.add.sprite(0, 0, 'sky');
+    
 }
 
 function update() {
