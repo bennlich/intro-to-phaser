@@ -61,6 +61,9 @@ function update() {
     // Check for collisions between the player and the ground
     game.physics.arcade.collide(player, ground);
     
+    // Check for collisions between the player and all platforms
+    game.physics.arcade.collide(player, platforms);
+    
     if (keys.left.isDown) {
         //  Move to the left
         player.body.velocity.x = -150;
