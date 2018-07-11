@@ -36,6 +36,9 @@ function create() {
     //  with stuff
     game.physics.arcade.enable(player);
     
+    //  Player physics properties.
+    player.body.gravity.y = 300;
+    
     //  Our controls.
     keys = game.input.keyboard.createCursorKeys();
     
