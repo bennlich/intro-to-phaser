@@ -33,11 +33,13 @@ function create() {
     //  We need to enable physics on the ground so that it can move and collide with stuff
     game.physics.arcade.enable(ground);
     
+    //  This stops the ground from falling away when you jump on it
+    ground.body.immovable = true;
+    
     // The player and its settings
     player = game.add.sprite(32, game.world.height - 150, 'dude');
     
-    //  We need to enable physics on the player so that it can move and collide
-    //  with stuff
+    //  We need to enable physics on the player so that it can move and collide with stuff
     game.physics.arcade.enable(player);
     
     //  Player physics properties.
