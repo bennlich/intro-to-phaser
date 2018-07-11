@@ -42,8 +42,13 @@ function create() {
 }
 
 function update() {
-    if (keys.right.isDown) {
+    if (keys.left.isDown) {
         //  Move to the left
+        player.body.velocity.x = -150;
+    }
+    else if (keys.right.isDown) {
+        //  Move to the right
         player.body.velocity.x = 150;
     }
 }
+
