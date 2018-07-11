@@ -11,10 +11,15 @@ function preload() {
 
 function create() {
 
-    game.add.sprite(20, 20, 'star');
-
     //  A simple background for our game
     game.add.sprite(0, 0, 'sky');
+    game.add.sprite(20, 20, 'star');
+    
+    //  The platforms group contains the ground and the 2 ledges we can jump on
+    var platforms = game.add.group();
+    
+    // Here we create the ground.
+    var ground = platforms.create(0, game.world.height - 64, 'ground');
     
 }
 
