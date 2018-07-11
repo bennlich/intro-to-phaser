@@ -70,5 +70,8 @@ function update() {
     else {
         //  Stop
         player.body.velocity.x = 0;
+        
+        //  Stand still
+        player.animations.stop();
     }
 }
