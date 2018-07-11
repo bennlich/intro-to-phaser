@@ -30,6 +30,9 @@ function create() {
     //  Double the size of the platform (vertically by 2 and horizontally by 2)
     ground.scale.setTo(2, 2);
     
+    //  We need to enable physics on the ground so that it can move and collide with stuff
+    game.physics.arcade.enable(ground);
+    
     // The player and its settings
     player = game.add.sprite(32, game.world.height - 150, 'dude');
     
