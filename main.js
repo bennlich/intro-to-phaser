@@ -9,6 +9,11 @@ function preload() {
 
 }
 
+// Any variables that we want to use in both create() and update()
+// have to be declared outside of both functions.
+var keys;
+var player;
+
 function create() {
 
     //  A simple background for our game
@@ -25,14 +30,14 @@ function create() {
     ground.scale.setTo(2, 2);
     
     // The player and its settings
-    var player = game.add.sprite(32, game.world.height - 150, 'dude');
+    player = game.add.sprite(32, game.world.height - 150, 'dude');
     
     //  We need to enable physics on the player so that it can move and collide
     //  with stuff
     game.physics.arcade.enable(player);
     
     //  Our controls.
-    var keys = game.input.keyboard.createCursorKeys();
+    keys = game.input.keyboard.createCursorKeys();
     
 }
 
