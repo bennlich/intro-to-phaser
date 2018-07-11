@@ -77,4 +77,8 @@ function update() {
         // Reset animation frame
         player.frame = 4;
     }
+    
+    if (keys.up.isDown) {
+        player.body.velocity.y = -350;
+    }
 }
