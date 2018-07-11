@@ -50,5 +50,8 @@ function update() {
         //  Move to the right
         player.body.velocity.x = 150;
     }
+    else {
+        //  Stop
+        player.body.velocity.x = 0;
+    }
 }
-
