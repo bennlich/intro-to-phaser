@@ -14,6 +14,7 @@ function preload() {
 var keys;
 var player;
 var ground;
+var platforms;
 
 function create() {
 
@@ -22,7 +23,7 @@ function create() {
     game.add.sprite(20, 20, 'star');
     
     //  The platforms group contains the ground and the 2 ledges we can jump on
-    var platforms = game.add.group();
+    platforms = game.add.group();
     
     // Here we create the ground.
     ground = platforms.create(0, game.world.height - 64, 'ground');
